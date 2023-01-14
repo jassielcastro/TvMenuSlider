@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.MenuSlider" parent="@style/Theme.Leanback" />
+</resources>
