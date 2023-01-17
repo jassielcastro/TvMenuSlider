@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936166782947",
+    "project_id": "menuslider-c927b",
+    "storage_bucket": "menuslider-c927b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936166782947:android:7b401f32b70745c8ea12d6",
+        "android_client_info": {
+          "package_name": "com.ajcm.menuslider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936166782947-95bo2l309u3j6btu31o5vvjbvfp3jrbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMoJjZYQpeNcJdn3FZE8nVqGBDQBSvCpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936166782947-95bo2l309u3j6btu31o5vvjbvfp3jrbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
