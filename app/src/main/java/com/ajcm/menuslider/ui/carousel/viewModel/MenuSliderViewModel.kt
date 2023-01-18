@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.ajcm.menuslider.model.MenuItem
 import com.ajcm.menuslider.usecase.GetMenuUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
@@ -24,10 +25,29 @@ class MenuSliderViewModel @Inject constructor(
             emptyList()
         )
 
+    private val mIndexStep = MutableSharedFlow<Int>()
+    val indexStep = mIndexStep
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            0
+        )
+
     fun downloadImageSlides() {
         getMenuUseCase {
             viewModelScope.launch {
                 mImageSlides.emit(it)
+            }
+        }
+    }
+
+    fun generateSteps(listOfImages: List<MenuItem>) = viewModelScope.launch {
+        while (true) {
+            delay(3_000L)
+            if (indexStep.value == listOfImages.size - 1) {
+                mIndexStep.emit(0)
+            } else {
+                mIndexStep.emit(indexStep.value + 1)
             }
         }
     }
