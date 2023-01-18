@@ -14,5 +14,5 @@ val ColorScheme = darkColorScheme(
     primary = Orange,
     secondary = Green,
     tertiary = Sandy,
-    background = Green
+    background = Sandy
 )
