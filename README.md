@@ -6,8 +6,6 @@
 
 This simple project is to integrate JetpackCompose, AndroidTV, Firebase's Firestore, Dagger Hilt and Glide to display a Fast Food style restaurant menu but in a dynamic way, where one or several images can be integrated.
 
-![Screenshot](screenshoots/banner.png)
-
 ## Firestore configuration (Example)
 
 ![Screenshot](screenshoots/firestore_config.png)
